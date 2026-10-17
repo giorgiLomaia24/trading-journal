@@ -23,8 +23,7 @@ app.use(cors({
   credentials: true // თუ ავტორიზაციისთვის ქუქიებს ან ტოკენებს იყენებ
 }));
 
-// Preflight მოთხოვნების (OPTIONS) ავტომატური გატარება ყველა ენდპოინტზე
-app.options('/*', cors()); 
+
 
 app.use(express.json());
 
