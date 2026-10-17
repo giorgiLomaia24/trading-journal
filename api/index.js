@@ -24,7 +24,7 @@ app.use(cors({
 }));
 
 // Preflight მოთხოვნების (OPTIONS) ავტომატური გატარება ყველა ენდპოინტზე
-app.options('*', cors());
+app.options('/*', cors()); 
 
 app.use(express.json());
 
