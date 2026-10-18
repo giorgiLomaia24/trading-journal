@@ -17,7 +17,8 @@ const app = express();
 
 // განახლებული CORS კონფიგურაცია ვერსელისთვის
 app.use(cors({
-  origin: 'https://trading-journal-fhsw-one.vercel.app', // შენი ფრონტენდის რეალური მისამართი
+  origin: 'https://trading-journal-fhsw-one.vercel.app',
+  // origin: 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
   credentials: true // თუ ავტორიზაციისთვის ქუქიებს ან ტოკენებს იყენებ
